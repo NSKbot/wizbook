@@ -12,3 +12,6 @@
 6. Instead, wizbook is expected to handle the mathematical relations between the variables of the UGC. For example, the weapons will be UGC but the weapon attack bonuses should be calculated automatically. However, you do NOT need to maintain the ruleset either. That will be UGC as well. So the user should be able to directly input (using dropdowns or a formal equation / expression langauge) how a weapon bonus is calculated.
 
 7. To start, the UI/UX should be absurdly simple. Linear boxes of features, left to right, top to down. The user should be able to "drag and drop" each box to order them.
+
+## Usage
+Open `index.html` in your browser. Use "Add Feature" to create a new feature box. Each feature can contain variables with numeric values or expressions referencing other variables using `FeatureName.variableName` syntax. Drag feature boxes to reorder them.
