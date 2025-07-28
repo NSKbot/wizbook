@@ -4,13 +4,15 @@
     }
     #features {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       gap: 1rem;
     }
     .feature {
       border: 1px solid #ccc;
       padding: 0.5rem;
       background: #f9f9f9;
+      flex: 1 1 250px;
+      max-width: 100%;
     }
     .feature.dragging {
       opacity: 0.5;
