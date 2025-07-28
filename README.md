@@ -15,3 +15,26 @@
 
 ## Usage
 Open `index.html` in your browser. Use "Add Feature" to create a new feature box. Each feature can contain variables with numeric values or expressions referencing other variables using `FeatureName.variableName` syntax. Drag feature boxes to reorder them.
+
+## Expressions
+Each variable's value field accepts either a plain number or an expression. An
+expression may include standard arithmetic operators (`+`, `-`, `*`, `/`,
+parentheses) and references to other variables.
+
+References use the form `FeatureName.variableName`. For example,
+`Ability.str` refers to the variable named `str` inside the feature named
+`Ability`.
+
+Features and variables are evaluated in the order they appear on the page. A
+reference to a variable that has not been evaluated yet will resolve to `0`. To
+reference another variable inside the same feature, ensure the referenced
+variable appears above the current one.
+
+Example expression:
+
+```
+(Ability.str - 10) / 2 + Weapon.attackBonus
+```
+
+Edit the expressions at any time and the displayed values will update
+automatically.
